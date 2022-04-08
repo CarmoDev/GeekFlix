@@ -1,0 +1,115 @@
+/*Base*/
+:root {
+    --roxo: #8a2be2;
+    --background: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--roxo);
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(157, 29, 255);
+    margin-right: 10px;
+    transition: .3s;
+}
+
+header nav a:hover {
+    color: rgba(157, 29, 255, .716);
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/*Principal*/
+
+.principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)), url("../img/lucifer.jpg") center;
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .description {
+    margin-top: 1%;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.title {
+    margin-top: 20%;
+    font-size: 90px;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px;
+    margin-right: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.principal .container {
+    width: 60%;
+}
+
+/* Carrosel */
+
+.carrosel-filmes {
+    margin-top: 20px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.filmes {
+    margin: 0 0 0 10px;
+    text-decoration: underline;
+}
