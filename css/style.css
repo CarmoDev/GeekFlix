@@ -31,6 +31,8 @@ header .logo {
 header nav a {
     text-decoration: none;
     color: rgb(157, 29, 255);
+    font-weight: bold;
+    font-size: 20px;
     margin-right: 10px;
     transition: .3s;
 }
@@ -97,19 +99,35 @@ header nav a:hover {
     width: 60%;
 }
 
+.watch-box {
+    position: absolute;
+    z-index: 2;
+    background-color: var(--background);
+    padding: 50px;
+}
+
+.watch {
+    width: 100vw;
+    height: 80vh;
+}
+
 /* Carrosel */
 
 .carrosel-filmes {
     margin-top: 20px;
 }
 
-.box-filme {
+.box-midia {
     height: 100%;
     width: 100%;
     display: block;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 7px 14px 2px #000000;
+    cursor: pointer;
 }
 
-.filmes {
-    margin: 0 0 0 10px;
-    text-decoration: underline;
+.midia-title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0 5px 20px;
 }
